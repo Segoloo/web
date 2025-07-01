@@ -34,13 +34,9 @@
             <div class="header__info flex align-items-center gap-3">
                 <ul class="flex flex-column xl:flex-row list-none">
                     <li onclick="scrollToSection('about')">👨 Sobre mí </li>
-                    <li onclick="scrollToSection('services')">💻 Mis Habilidades </li>
-                    <li onclick="scrollToSection('portfolio')">📖 Mis Proyectos </li>
-                    <li>
-                        <a href="https://wa.link/5kh3hk" target="_blank" style="text-decoration: none; color: inherit;">
-                            📞 Contáctame! 📞
-                        </a>
-                    </li>
+                    <li onclick="scrollToSection('services')">💻 Habilidades </li>
+                    <li onclick="scrollToSection('portfolio')">📖 Proyectos </li>
+                    <li onclick="scrollToSection('study')">📑 Certificados </li>
                 </ul>
             </div>
             
@@ -101,10 +97,6 @@
                 <div class="tech" title="Swing">
                     <i class="fa-solid fa-window-restore"></i>
                     <p>Swing</p>
-                </div>
-                <div class="tech" title="MySQL">
-                    <i class="fa-solid fa-database"></i>
-                    <p>MySQL</p>
                 </div>
             </div>
                 </div>
@@ -190,15 +182,41 @@
             </div>
 
             <!-- DESCRIPCIÓN -->
-            <p class="text-gray-500">
-                He desarrollado aplicaciones web con .NET y Blazor, implementando login con JWT, controladores REST y conexión a bases de datos. También he trabajado en aplicaciones de escritorio con Java y Swing, como Segolo Games, un sistema de gestión con interfaz gráfica, JDBC y operaciones CRUD. Estos proyectos demuestran mi capacidad para integrar lógica, datos e interfaz de forma eficiente.
-            </p>
-            <br><br><br>
 
-            <!-- PROYECTO 1: Segolo Games -->
+            <!-- PROYECTO 1: Sistema Web CRUD-Login -->
             
                 <div class="mb-6">
-                    <h2 class="text-2xl font-semibold">1. Segolo Games</h2>
+                    <h2 class="text-2xl font-semibold">1. Sistema Web CRUD-Login</h2>
+                    <p class="text-gray-400 mt-2">
+                        Aplicación web desarrollada con .NET y Blazor. Integra login seguro con JWT, controladores RESTful, Entity Framework Core, rutas protegidas, roles, y conexión a base de datos. Presenta un diseño responsivo y funcional para la gestión de diversas tablas en la base de datos además de un sistema de verificador de roles con sus respectivas rutas y permisos.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mt-4">
+                        <a href="https://github.com/Segoloo/CRUD-LOGIN-BLAZOR-.NET/tree/master" target="_blank"
+                            class="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-300 text-center sm:w-auto w-full">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- GALERÍA DE IMÁGENES -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+                    <div style="overflow: hidden; border-radius: 1.5rem;" class="shadow-md w-full">
+                        <img src="./assets/proyecto-1.png" alt="Sistema Web CRUD-Login 1" class="w-full h-auto object-cover">
+                    </div>
+                    <div style="overflow: hidden; border-radius: 1.5rem;" class="shadow-md w-full">
+                        <img src="./assets/proyecto-3.png" alt="Sistema Web CRUD-Login 3" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+                
+                
+            
+
+            <br><br><br><hr><br><br><br>
+
+            <!-- PROYECTO 2: Segolo Games -->
+            
+                <div class="mb-6">
+                    <h2 class="text-2xl font-semibold">2. Segolo Games</h2>
                     <p class="text-gray-400 mt-2">
                         Sistema de escritorio para la gestión de clientes, ventas y empleados, desarrollado con Java y Swing. Incluye conexión a base de datos MySQL mediante JDBC y funcionalidades CRUD completas.
                     </p>
@@ -220,39 +238,52 @@
                         <img src="./assets/proyecto-4.png" alt="Sistema Web CRUD-Login 1" class="w-full h-auto object-cover">
                     </div>
                 </div>
-                
-            
+            </div>
+        </section>
+        
+        <br><br><br><hr>
+        <section id="study" class="bg-black text-white py-12 px-4"><br><br><br>
+        
+        <div class="container">
+            <h1 class="text-3xl md:text-5xl text-center mb-12">Educación y Certificados</h1><br><br>
 
-            <br><br><br><hr><br><br><br>
+            <div class="grid grid-nogutter sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-content-center">
+            <!-- CARD 1 -->
+            <div class="card bg-[#111111] text-center p-4 rounded-2xl shadow-md hover:bg-[#6a0dad]/60 transition duration-300">
+                <img src="./assets/B1.jpg" alt="Certificado Inglés B1" class="w-full h-56 object-cover rounded-xl mb-4">
+                <h2 class="text-xl font-semibold mb-2">Inglés B1 Conversacional</h2>
+                <p class="text-sm text-gray-400">Academia SMART<br>2022 - 2023</p>
+            </div>
 
-            <!-- PROYECTO 2: Sistema Web CRUD-Login -->
-            
-                <div class="mb-6">
-                    <h2 class="text-2xl font-semibold">2. Sistema Web CRUD-Login</h2>
-                    <p class="text-gray-400 mt-2">
-                        Aplicación web desarrollada con .NET y Blazor. Integra login seguro con JWT, controladores RESTful, Entity Framework Core, rutas protegidas, roles, y conexión a base de datos. Presenta un diseño responsivo y funcional para la gestión de diversas tablas en la base de datos además de un sistema de verificador de roles con sus respectivas rutas y permisos.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 mt-4">
-                        <a href="https://github.com/Segoloo/CRUD-LOGIN-BLAZOR-.NET/tree/master" target="_blank"
-                            class="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-300 text-center sm:w-auto w-full">
-                            <i class="fab fa-github text-xl"></i>
-                        </a>
-                    </div>
-                </div>
+            <!-- CARD 2 -->
+            <div class="card bg-[#111111] text-center p-4 rounded-2xl shadow-md hover:bg-[#6a0dad]/60 transition duration-300">
+                <img src="./assets/desarrolladorsena.jpg" alt="Certificado SENA" class="w-full h-56 object-cover rounded-xl mb-4">
+                <h2 class="text-xl font-semibold mb-2">Técnico en Desarrollo de Software</h2>
+                <p class="text-sm text-gray-400">SENA<br>2021 - 2022</p>
+            </div>
 
-                <!-- GALERÍA DE IMÁGENES -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
-                    <div style="overflow: hidden; border-radius: 1.5rem;" class="shadow-md w-full">
-                        <img src="./assets/proyecto-1.png" alt="Sistema Web CRUD-Login 1" class="w-full h-auto object-cover">
-                    </div>
-                    <div style="overflow: hidden; border-radius: 1.5rem;" class="shadow-md w-full">
-                        <img src="./assets/proyecto-3.png" alt="Sistema Web CRUD-Login 3" class="w-full h-auto object-cover">
-                    </div>
-                </div>
-            
+            <!-- CARD 3 -->
+            <div class="card bg-[#111111] text-center p-4 rounded-2xl shadow-md hover:bg-[#6a0dad]/60 transition duration-300">
+                <img src="./assets/itm.png" alt="ITM Tecnólogo" class="w-full h-56 object-cover rounded-xl mb-4">
+                <h2 class="text-xl font-semibold mb-2">Tecnólogo en Desarrollo de Software</h2>
+                <p class="text-sm text-gray-400">ITM<br>2023 - Actualidad<br><em>*En formación*</em></p>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="card bg-[#111111] text-center p-4 rounded-2xl shadow-md hover:bg-[#6a0dad]/60 transition duration-300">
+                <img src="./assets/itm1.png" alt="ITM Ingeniería" class="w-full h-56 object-cover rounded-xl mb-4">
+                <h2 class="text-xl font-semibold mb-2">Ingeniería de Sistemas</h2>
+                <p class="text-sm text-gray-400">ITM<br>2023 - Actualidad<br><em>*En formación*</em></p>
+            </div>
+            </div>
+        </div>
         </section>
         <br><br><br>
+        </div>
+        
+    
         <!--FOOTER -->
+        <div class="container">
         <footer id="contact" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center">
             <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">
                 <h3>Sebastián Gómez López</h3>
@@ -293,11 +324,14 @@
                 <p>Desarrollo de escritorio</p>
                 <p>Diseño de UI/UX</p>
             </div>
+        </div>
         </footer>
     </div>
+
         <a href="https://wa.link/5kh3hk" class="whatsapp-float" target="_blank" aria-label="Escríbeme por WhatsApp">
         <i class="fab fa-whatsapp"></i>
         </a>
+
 </body>
 <script>
     const filterContainer = document.querySelector(".gallery__categories");

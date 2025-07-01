@@ -454,3 +454,17 @@ footer {
     right: 15px;
   }
 }
+
+.carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+.elemento {
+    flex: 1 0 auto;
+    margin: 0 50px;
+    background-color: #6a0dad;
+    width: 500px;
+    height: 500px;
+}
